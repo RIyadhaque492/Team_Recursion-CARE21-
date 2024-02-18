@@ -1,0 +1,25 @@
+.doctors {
+    background-color: rgb(70, 169, 189);
+    padding: 20px;
+}
+
+.docs {
+    background-color: rgb(34, 105, 159);
+    margin: 5%;
+    padding: 20px;
+    border-radius: 20px;
+    color: yellow;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.our-doctor {
+    background-color: rgb(6, 54, 102);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+}

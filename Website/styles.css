@@ -1,0 +1,501 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.care {
+    color: red;
+    font-weight: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 29px;
+    margin-left: 30px;
+}
+.twenty-one {
+    color: rgb(13, 12, 12);
+    font-weight: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #357db0;
+  color: #FFF;
+  height: 70px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.side:hover {
+    border: 2px solid transparent;
+    background-color: rgb(127, 17, 155);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 576px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #14787c;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+.logo {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.our-info {
+    padding: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: beige;
+    color: rgb(108, 5, 111);
+    box-shadow: 5px 5px rgb(105, 19, 52);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.our-info>p{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+.girl {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.care1{
+  color: red;
+  font-weight: 500px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.two-one{
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 22px;
+}
+
+.buttons {
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-left: 32%;
+    margin-right: 30%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: red;
+    color: rgb(239, 231, 7);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    width: 200px;
+    height: 100px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(136, 32, 32);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 25px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button4:hover span {
+  padding-right: 25px;
+}
+
+.button4:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.connect {
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin-top: 45px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(133, 194, 222);
+    color: black;
+    box-shadow: 10px 10px lightblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.connect>hr {
+  width: 50%;
+}
+
+.connect > h3 {
+  font-size: 30px;
+}
+
+.but {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 40px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+footer > h3 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.foot {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  color: #FFF;
+  margin-top: 45px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.end {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.copy {
+  padding-top: 10px;
+}
+
+.logos{
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+.hr1 {
+  width: 75%;
+  justify-content: center;
+}
+
+.b {
+    background-color: rgb(17, 2, 17);
+    color: rgb(133, 194, 222);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+}
+
+.b>a {
+  text-decoration: none;
+  color: rgb(133, 194, 222);
+}
+
+.b:hover {
+  cursor: pointer;
+  background-color: rgb(22, 105, 105);
+  color: rgb(33, 4, 4);
+}
+
+.b1 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.plan {
+  background-color: rgb(203, 179, 225);
+  padding: 35px;
+  margin-top: 45px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: rgb(4, 73, 89);
+  box-shadow: 5px 5px 5px 5px rgb(188, 58, 108);
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fac-ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.fac-ul>h4{
+  text-align: left;
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  column-gap: 50px;
+  row-gap: 30px;
+  justify-content: center;
+}
+
+.pack{
+  background-color: #ffd0ec;
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pack > h4 {
+  color: rgb(106, 15, 134);
+}
+.pack > p {
+  color: rgb(50, 8, 52);
+}
+.grab{
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: blueviolet;
+  font-size: 15px;
+}
+
+.pack:hover {
+  background-color: #72ceb4;
+  color: #FFF;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+.grab:hover {
+  background-color: rgb(93, 13, 13);
+}

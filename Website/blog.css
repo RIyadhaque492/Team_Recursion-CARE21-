@@ -1,0 +1,25 @@
+.blog{
+    background-color: rgb(128, 10, 10);
+    padding: 15px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.main-part {
+    background-color: rgb(205, 167, 242);
+    padding: 30px;
+    margin: 30px;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.part{
+    text-align: center;
+}
+
+.main-part:hover {
+    background-color: black;
+    color: rgb(205, 167, 242);
+}

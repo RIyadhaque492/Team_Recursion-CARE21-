@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Properties/children.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-2-wrapper {
+    background: #281cce29;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px black;
+    background-color: rgba(29, 138, 193, 0.9);
+    opacity: 0.5px;
+}
+
+input.form-control{
+    padding: 11px;
+    border: none;
+    border: 2px solid #671906b8;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+input.form-control:focus{
+    box-shadow: none;
+    outline: 0px;
+    background-color: transparent;
+}
+
+button.login-btn{
+    background: #993bc2;
+    color: #fff;
+    border: none;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button.login-btn:hover{
+    cursor: grab;
+    background-color: #fff;
+    color: #670664b8;
+    font-weight: 500;
+    font-size: 15px;
+}
+.register-test a{
+    color: #000;
+}
+.social-login button{
+    border-radius: 30px;
+}
+
+.social {
+    background-color: crimson;
+    padding: 15px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.facebook {
+    background-color: rgb(37, 17, 167);
+    padding: 15px;
+    color: #fff;
+}
+
+.facebook:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: blue;
+}
+
+.social:hover {
+    cursor: pointer;
+    background-color: white;
+    color: red;
+}

@@ -1,0 +1,49 @@
+.seek{
+    background-color: rgb(224, 218, 218);
+    padding: 35px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.seek>h3{
+    font-size: 25px;
+}
+
+.problem{
+    background-color: antiquewhite;
+    text-align: justify;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 20px;
+    margin-left: 15%;
+    margin-right: 10%;
+    box-shadow: 5px 5px 5px 5px rgb(201, 167, 105);
+}
+
+.form>input{
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.image{
+    padding: 15px;
+    background-color: rgb(162, 241, 241);
+    cursor: pointer;
+}
+
+.done {
+    background-color: black;
+    color: aqua;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.done:hover{
+    background-color: aqua;
+    color: black;
+    cursor: progress;
+}

@@ -1,0 +1,29 @@
+.contact {
+    background-color: black;
+    color: rgb(79, 49, 49);
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.con {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: justify;
+    margin: 30px;
+}
+
+.con>h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.number {
+    color: rgb(205, 48, 12);
+}
+
+.number:hover {
+    background-color: black;
+    color: white;
+}
